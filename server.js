@@ -30,10 +30,10 @@ app.post('/send-email', (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error(error);
-      res.send(`<script>alert('Error sending email'); window.location = '/';</script>`);
+      res.send(`<script>alert('Error sending email'); window.location = 'https://dimtony.github.io/';</script>`);
     } else {
       console.log('Email sent: ' + info.response);
-      res.send(`<script>alert('Email sent successfully'); window.location = '/';</script>`);
+      res.send(`<script>alert('Email sent successfully'); window.location = 'https://dimtony.github.io/';</script>`);
     }
   });
 });
