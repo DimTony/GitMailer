@@ -37,3 +37,5 @@ app.post('/send-email', (req, res) => {
   });
 });
 
+server.listen();
+
