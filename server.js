@@ -45,6 +45,7 @@ app.post("/send-email", (req, res) => {
 });
 
 app.get("/keep-alive", (req, res) => {
+  console.log("Server is alive!");
   res.status(200).send("Server is alive!");
 });
 
